@@ -118,3 +118,99 @@ nav a:hover::after {
     line-height: 0.85;
     letter-spacing: -2px;
 }
+
+.quem-sou {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 56px 80px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.foto {
+    width: 320px;
+    height: 380px;
+    border: 2px dashed #09689c;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #09689c;
+    font-size: 20px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.apresentacao h1 {
+    font-size: 4rem;
+    line-height: 0.95;
+    color: #09689c;
+    margin: 0 0 24px;
+}
+
+.apresentacao p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    max-width: 640px;
+    color: #034870;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
+}
+
+.tags li {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #09689c;
+}
+
+.tags li+li::before {
+    content: "•";
+    margin-right: 24px;
+    color: #034870;
+}
+
+.botao {
+    display: inline-block;
+    background: #09689c;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 14px 28px;
+    border-radius: 999px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.botao:hover {
+    background: #034870;
+    transform: translateY(-2px);
+}
+
+.foto {
+    animation: entrada 0.8s ease both;
+}
+
+.apresentacao h1 {
+    animation: entrada 0.8s ease 0.15s both;
+}
+
+.apresentacao p {
+    animation: entrada 0.8s ease 0.3s both;
+}
+
+.tags {
+    animation: entrada 0.8s ease 0.45s both;
+}
+
+.botao {
+    animation: entrada 0.8s ease 0.6s both;
+}
