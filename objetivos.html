@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Sou</title>
+</head>
+
+<script>
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+            const titulos = document.querySelectorAll('.conteudo-principal h1, .conteudo-principal h2');
+
+            titulos.forEach(el => {
+                el.style.animation = 'none';
+                el.offsetHeight;
+                el.style.animation = '';
+            });
+        }
+    });
+</script>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="Quem sou eu">Quem Sou</a>
+            <a href="Objetivos">Objetivos</a>
+            <a href="Objetivos">Experiências e Competências</a>
+        </nav>
+        <div class="nome">Gabriel Alves</div>
+        <div class="contato">
+            <a href="mailto:alves03rlk@gmail.com">alves03rlk@gmail.com</a>
+            <a href="tel:+5511953967896">(11) 95396-7896</a>
+        </div>
+    </header>
+    <main class="objetivos">
+
+        <h1>Objetivos</h1>
+
+        <p class="destaque">
+            Busco uma oportunidade de crescimento profissional, na qual eu possa
+            aplicar minhas habilidades, contribuir com os resultados da empresa
+            e desenvolver novos conhecimentos.
+        </p>
+
+        <div class="cards">
+            <article class="card">
+                <span class="numero">01</span>
+                <h2>Aplicar minhas habilidades</h2>
+            </article>
+
+            <article class="card">
+                <span class="numero">02</span>
+                <h2>Contribuir com os resultados da empresa</h2>
+            </article>
+
+            <article class="card">
+                <span class="numero">03</span>
+                <h2>Desenvolver novos conhecimentos</h2>
+            </article>
+        </div>
+
+        <ul class="tags">
+            <li>Proativo</li>
+            <li>Responsável</li>
+            <li>Boa comunicação interpessoal</li>
+            <li>Facilidade para aprender</li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>
