@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" fill="none" stroke="#2ee6f5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- linha 1 -->
+  <path d="M340 10 V90 L380 130 V300 L400 320"/>
+  <circle cx="340" cy="10" r="5" fill="#2ee6f5"/>
+  <circle cx="380" cy="130" r="8" fill="#2ee6f5"/>
+
+  <!-- linha 2 -->
+  <path d="M300 120 V250 L350 300 V380"/>
+  <circle cx="300" cy="120" r="5" fill="#2ee6f5"/>
+  <circle cx="350" cy="300" r="7" fill="#2ee6f5"/>
+
+  <!-- linha 3 -->
+  <path d="M40 330 H120 L140 290 H230 L250 330 H330 L350 360"/>
+  <circle cx="40" cy="330" r="5" fill="#2ee6f5"/>
+  <circle cx="140" cy="290" r="8" fill="#2ee6f5"/>
+  <circle cx="250" cy="330" r="6" fill="#2ee6f5"/>
+
+</svg>

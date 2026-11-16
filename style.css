@@ -128,16 +128,12 @@ nav a:hover::after {
 }
 
 .foto {
-    width: 320px;
-    height: 380px;
-    border: 2px dashed #09689c;
+    width: 360px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 60%;
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #09689c;
-    font-size: 20px;
-    font-weight: 600;
+    border: 2px solid #09689c;
     flex-shrink: 0;
 }
 
@@ -179,7 +175,9 @@ nav a:hover::after {
 }
 
 .botao {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     background: #09689c;
     color: #fff;
     text-decoration: none;
@@ -213,4 +211,206 @@ nav a:hover::after {
 
 .botao {
     animation: entrada 0.8s ease 0.6s both;
+}
+
+.objetivos {
+    padding: 56px 80px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.objetivos h1 {
+    font-size: 4rem;
+    line-height: 0.95;
+    color: #09689c;
+    margin: 0 0 24px;
+}
+
+.destaque {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    max-width: 760px;
+    color: #034870;
+    margin: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 40px 0;
+}
+
+.card {
+    background: #fff;
+    border: 2px solid #09689c;
+    border-radius: 16px;
+    padding: 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(3, 72, 112, 0.2);
+}
+
+.numero {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #09689c;
+}
+
+.card h2 {
+    font-size: 1.6rem;
+    margin: 8px 0 0;
+    color: #034870;
+}
+
+.experiencias {
+    padding: 56px 80px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.experiencias h1 {
+    font-size: 4rem;
+    line-height: 0.95;
+    color: #09689c;
+    margin: 0 0 40px;
+}
+
+.colunas {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+}
+
+.experiencias h2 {
+    font-size: 2.1rem;
+    color: #09689c;
+    margin: 0 0 16px;
+}
+
+.experiencias section {
+    margin-bottom: 32px;
+}
+
+.experiencias .card h3 {
+    font-size: 1.4rem;
+    color: #034870;
+    margin: 4px 0;
+}
+
+.experiencias .card p {
+    font-size: 1.1rem;
+    margin: 0 0 14px;
+    color: #034870;
+}
+
+time {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #09689c;
+}
+
+.cargo {
+    font-weight: 600;
+}
+
+.lista {
+    margin: 0;
+    padding-left: 22px;
+    font-size: 1.1rem;
+    color: #034870;
+}
+
+.lista li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+    .colunas {
+        grid-template-columns: 1fr;
+    }
+}
+
+.competencias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.competencias li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #034870;
+}
+
+.competencias li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #09689c;
+    flex-shrink: 0;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 420px;
+    height: 400px;
+    background: url("foto/circuito.svg") no-repeat right bottom / contain;
+    pointer-events: none;
+    z-index: 0;
+}
+
+header,
+main {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 700px) {
+    body::after {
+        display: none;
+    }
+}
+
+.icone {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.botao-github {
+    background: #050b0f;
+}
+
+.botao-github:hover {
+    background: #121531;
+}
+
+.contato a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.contato svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
